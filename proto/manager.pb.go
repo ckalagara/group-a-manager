@@ -109,7 +109,7 @@ const file_proto_manager_proto_rawDesc = "" +
 	"\rHealthRequest\"(\n" +
 	"\x0eHealthResponse\x12\x16\n" +
 	"\x06status\x18\x01 \x01(\tR\x06status2D\n" +
-	"\aManager\x129\n" +
+	"\aService\x129\n" +
 	"\x06Health\x12\x16.manager.HealthRequest\x1a\x17.manager.HealthResponseB\tZ\a./protob\x06proto3"
 
 var (
@@ -130,8 +130,8 @@ var file_proto_manager_proto_goTypes = []any{
 	(*HealthResponse)(nil), // 1: manager.HealthResponse
 }
 var file_proto_manager_proto_depIdxs = []int32{
-	0, // 0: manager.Manager.Health:input_type -> manager.HealthRequest
-	1, // 1: manager.Manager.Health:output_type -> manager.HealthResponse
+	0, // 0: manager.Service.Health:input_type -> manager.HealthRequest
+	1, // 1: manager.Service.Health:output_type -> manager.HealthResponse
 	1, // [1:2] is the sub-list for method output_type
 	0, // [0:1] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name

@@ -33,23 +33,23 @@ docker run -p 50051:50051 group-a-manager
 
 ### Reflections
 ```
-grpcurl -plaintext localhost:50051 list          
+grpcurl -plaintext localhost:50051 list                    
 grpc.reflection.v1.ServerReflection
 grpc.reflection.v1alpha.ServerReflection
-manager.Manager
+manager.Service
 
 ```
 
 ### Health
 
 ```
-grpcurl -plaintext \
+group-a-manager % grpcurl -plaintext \
   -proto proto/manager.proto \
   -import-path ./proto \
   -d '{}' \
   localhost:50051 \
-  manager.Manager/Health 
+  manager.Service/Health
 {
   "status": "Up"
 }
-````
+```

@@ -20,7 +20,7 @@ func main() {
 	log.Printf("Creating gRPC server: %v", time.Now())
 	server := grpc.NewServer()
 	reflection.Register(server)
-	pb.RegisterManagerServer(server, &core.ServerImpl{})
+	pb.RegisterServiceServer(server, &core.ServerImpl{})
 	log.Printf("Serving gRPC server: %v", time.Now())
 
 	err = server.Serve(listener)

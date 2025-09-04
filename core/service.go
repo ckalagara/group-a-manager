@@ -9,7 +9,7 @@ import (
 )
 
 type ServerImpl struct {
-	pb.UnimplementedManagerServer
+	pb.UnimplementedServiceServer
 }
 
 func (s *ServerImpl) Health(ctx context.Context, req *pb.HealthRequest) (*pb.HealthResponse, error) {

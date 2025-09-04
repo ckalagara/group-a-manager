@@ -4,7 +4,7 @@ package manager;
 
 option go_package = "./proto";
 
-service Manager {
+service Service {
     rpc Health(HealthRequest) returns (HealthResponse);
 }
 
